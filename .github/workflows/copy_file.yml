@@ -17,5 +17,7 @@ jobs:
           source-files: 'BenjaminGluckResume.pdf'
           destination-username: 'glucko'
           destination-repository: 'portfoliov2'
+          destination-branch: 'main'
           destination-directory: 'public'
           commit-email: 'b.gluck132@gmail.com'
+          commit-message: 'update resume'
