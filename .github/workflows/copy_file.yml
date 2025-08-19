@@ -1,0 +1,21 @@
+name: Push generated webpage to another repository
+
+on: push
+
+jobs:
+  push-to-repo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source repo
+        uses: actions/checkout@v3
+
+      - name: Push generated webpage to another repository
+        uses: nkoppel/push-files-to-another-repository@v1.1.4
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+        with:
+          source-files: 'BenjaminGluckResume.pdf'
+          destination-username: 'glucko'
+          destination-repository: 'portfoliov2'
+          destination-directory: 'public'
+          commit-email: 'b.gluck132@gmail.com'
