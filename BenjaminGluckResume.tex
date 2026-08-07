@@ -20,7 +20,6 @@
 \usepackage{tabularx}
 \input{glyphtounicode}
 
-
 %----------FONT OPTIONS----------
 % sans-serif
 % \usepackage[sfdefault]{FiraSans}
@@ -31,7 +30,6 @@
 % serif
 % \usepackage{CormorantGaramond}
 % \usepackage{charter}
-
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -54,7 +52,7 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
+  \vspace{-5pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
@@ -63,161 +61,159 @@
 %-------------------------
 % Custom commands
 \newcommand{\resumeItem}[1]{
-  \item\small{
+\item\small{
     {#1 \vspace{-2pt}}
   }
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
+  \vspace{-2pt}
+\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small#3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
+\item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textit{\small#1} & \textit{\small #2} \\
+  \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
-    \end{tabular*}\vspace{-7pt}
+\item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \small#1 & #2 \\
+  \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeSubHeadingListStart}{
+\begin{itemize}[leftmargin=0.15in, label={}]}
+    \newcommand{\resumeSubHeadingListEnd}{
+\end{itemize}}
+\newcommand{\resumeItemListStart}{
+\begin{itemize}}
+    \newcommand{\resumeItemListEnd}{
+\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 
 \begin{document}
 
 %----------HEADING----------
 \begin{center}
-    \textbf{\Huge Benjamin Gluck} \\ \vspace{1pt}
-    \small 614-980-8891 $|$ \href{mailto:b.gluck132@gmail.com}{\underline{b.gluck132@gmail.com}} $|$ 
-    \href{https://linkedin.com/in/ben-gluck}{\underline{linkedin.com/in/ben-gluck}} $|$
-    \href{https://github.com/glucko}{\underline{github.com/glucko}} $|$
-    \href{https://benjamingluck.com}{\underline{benjamingluck.com}}
+  \textbf{\Huge Benjamin Gluck} \\ \vspace{1pt}
+  \small 614-980-8891 $|$ \href{mailto:b.gluck132@gmail.com}{\underline{b.gluck132@gmail.com}} $|$
+  \href{https://linkedin.com/in/ben-gluck}{\underline{linkedin.com/in/ben-gluck}} $|$
+  \href{https://github.com/glucko}{\underline{github.com/glucko}} $|$
+  \href{https://benjamingluck.com}{\underline{benjamingluck.com}}
 \end{center}
-
 
 %-----------EDUCATION-----------
 \section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {The Ohio State University}{Expected Graduation: May 2028}
-      {Honors B.S. in Computer Science \& Engineering}{GPA: 3.89}
-  \resumeSubHeadingListEnd
-
+\resumeSubHeadingListStart
+\resumeSubheading
+{The Ohio State University}{ August 2024 - May 2028}
+{Honors B.S. in Computer Science \& Engineering}{GPA: 3.95}
+\resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------
 \section{Experience}
-  \resumeSubHeadingListStart
+\resumeSubHeadingListStart
 
-  \resumeSubheading
-  {Software Engineering Intern}{June 2025 -- August 2025}
-  {Lighthouse Avionics (Part Time)}{Hilliard, OH}
-  \resumeItemListStart
-    \resumeItem{Automated hardware and software readiness checks for AI edge devices to simplify device deployments.}
-    \resumeItem{Developed a script to remotely test and control hardware processes to shorten product testing pipeline.}
-    \resumeItem{Debugged system, network, and hardware issues on the VCT airspace scanner using terminal utilities.}
-  \resumeItemListEnd
+\resumeSubheading
+{Software Engineering Intern}{June 2026 -- Present}
+{Walmart}{Bentonville, AR}
+\resumeItemListStart
+\resumeItem{Worked on Walmart Performance \& Rewards, a talent management platform supporting 2,000,000+ associates.}
+\resumeItem{Created accessibility-compliant React Native dashboard library, reducing duplicate code by 80\% across 2 teams.}
+% \resumeItem{Unified cross-team Performance \& Rewards dashboard components into a single React Native UI library serving 2,000,000+ associates.}
+% \resumeItem{Reduced duplicate UI elements by 80\% by designing a set of a11y-compliant base components.}
+\resumeItem{Improved frontend DX by introducing Storybook catalog for isolated component development and documentation.}
+\resumeItem{Developed 9 cross-platform components with unit/snapshot tests (95\% coverage), translated across 8+ languages.}
+\resumeItemListEnd
 
-  \resumeSubheading
-  {Software Engineering Intern}{June 2025 -- August 2025}
-  {Renaissance Tech (Part Time)}{Dublin, OH}
-  \resumeItemListStart
-    \resumeItem{Built a testing framework to generate and validate 1k+ configurations to verify product creation flow.}
-    \resumeItem{Developed a system to asynchronously handle 10k+ validations without request flooding.}
-    \resumeItem{Collaborated with senior developer to integrate framework into codebase and AWS environment.}
-  \resumeItemListEnd
+\resumeSubheading
+{Software Engineering Intern}{June 2025 -- August 2025}
+{Lighthouse Avionics (Part Time)}{Hilliard, OH}
+\resumeItemListStart
+\resumeItem{Automated hardware and software readiness checks for AI edge devices to simplify device deployments.}
+\resumeItem{Developed a script to remotely test and control hardware processes to shorten product testing pipeline.}
+\resumeItem{Debugged system, network, and hardware issues on the VCT airspace scanner using terminal utilities.}
+\resumeItemListEnd
 
-  \resumeSubheading
-  {Web Development Intern}{June 2024 -- August 2024}
-  {Netsteady}{Hilliard, OH}
-  \resumeItemListStart
-    \resumeItem{Developed an internal timeclock system and dashboard used by 20+ employees using PHP, MySQL, and jQuery.}
-    \resumeItem{Designed a digital signage API and dashboard for handling 30+ smart TVs, saving \$600+ in monthly fees.}
-    \resumeItem{Created 5+ web forms that integrated with automation systems to streamline ticketing and support requests.}
-  \resumeItemListEnd
+\resumeSubheading
+{Software Engineering Intern}{June 2025 -- August 2025}
+{Renaissance Tech (Part Time)}{Dublin, OH}
+\resumeItemListStart
+\resumeItem{Built a testing framework to generate and validate 1k+ configurations to verify product creation flow.}
+\resumeItem{Developed a system to asynchronously handle 10k+ validations without request flooding.}
+\resumeItem{Collaborated with senior developer to integrate framework into codebase and AWS environment.}
+\resumeItemListEnd
 
-  \resumeSubHeadingListEnd
+\resumeSubheading
+{Web Development Intern}{June 2024 -- August 2024}
+{Netsteady}{Hilliard, OH}
+\resumeItemListStart
+\resumeItem{Developed an internal timeclock system and dashboard used by 20+ employees using PHP, MySQL, and jQuery.}
+\resumeItem{Designed a digital signage API and dashboard for handling 30+ smart TVs, saving \$600+ in monthly fees.}
+\resumeItem{Created 5+ web forms that integrated with automation systems to streamline ticketing and support requests.}
+\resumeItemListEnd
 
+\resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------
 \section{Projects}
-    \resumeSubHeadingListStart
-      \resumeProjectHeading
-          {\textbf{Fencing Tracker} $|$ \emph{Python, Flask, SQLAlchemy, Jinja2, Bootstrap}}{Spring 2023}
-          \resumeItemListStart
-            \resumeItem{Developed a web app to track fencing matches and tournaments for use at my fencing club.}
-            \resumeItem{Designed an interface to easily accept, display, and update data to improve scoring and record-keeping.}
-            \resumeItem{Architected a Flask backend with a SQLite database to analyze matches and easily accept user input.}
-          \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{AgreeToDisagree} $|$ \emph{JavaScript, TalkJS API, Bootstrap}}{Summer 2022}
-          \resumeItemListStart
-            \resumeItem{Developed a web app designed to connect people with differing viewpoints through bonding activities.}
-            \resumeItem{Implemented a login system to improve ease of use, sustain conversations, and store user preferences.}
-            \resumeItem{Built a user-friendly chat system using the TalkJS API, improving communication and accessibility.}
-          \resumeItemListEnd
-    \resumeSubHeadingListEnd
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\textbf{Fencing Tracker} $|$ \emph{Python, Flask, SQLAlchemy, Jinja2, Bootstrap}}{Spring 2023}
+\resumeItemListStart
+\resumeItem{Developed a web app to track fencing matches and tournaments for use at my fencing club.}
+\resumeItem{Designed an interface to easily accept, display, and update data to improve scoring and record-keeping.}
+\resumeItem{Architected a Flask backend with a SQLite database to analyze matches and easily accept user input.}
+\resumeItemListEnd
+\resumeProjectHeading
+{\textbf{AgreeToDisagree} $|$ \emph{JavaScript, TalkJS API, Bootstrap}}{Summer 2022}
+\resumeItemListStart
+\resumeItem{Developed a web app designed to connect people with differing viewpoints through bonding activities.}
+\resumeItem{Implemented a login system to improve ease of use, sustain conversations, and store user preferences.}
+\resumeItem{Built a user-friendly chat system using the TalkJS API, improving communication and accessibility.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
 
-
-%-----------Volunteering-----------
-\section{Volunteering}
-  \resumeSubHeadingListStart
-
-    \resumeSubheading
-      {Computer Science Volunteer}{June 2022 - August 2022}
-      {Schoolhouse.world}{Virtual}
-      \resumeItemListStart
-        \resumeItem{Prepared dozens of K-12 kids for future classes and careers with fundamental computer science tutoring.}
-        \resumeItem{Developed a cloud-based code sharing web app to allow students to easily share and review code.}
-        \resumeItem{Created lesson plans to teach complex topics without overwhelming beginner students.}
-      \resumeItemListEnd
-  \resumeSubHeadingListEnd
-
-  
 %-----------Awards-----------
 \section{Awards}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{First Place}{: Ohio State University High School I/O Cybersecurity Challenge (50+ participants)} \\
-     \textbf{Second Place}{: Phillips Exeter Academy Hackathon (100+ participants)} \\
-     \textbf{Second Place}{: Hathaway Brown Byte (70+ participants)} \\
-     \textbf{Third Place}{: 2022 \& 2023 Ohio High School Fencing Championship} \\
-     \textbf{OSU Maximus Scholarship}{: Competitive merit-based scholarship} \\
-     \textbf{Governor's Merit Scholarship}{: Given to the top 5\% of Ohio students} \\
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{
+    \item{
+        \textbf{Finalist}{: Neo Scholars} \\
+        \textbf{First Place}{: Ohio State University High School I/O Cybersecurity Challenge (50+ participants)} \\
+        \textbf{Second Place}{: Phillips Exeter Academy Hackathon (100+ participants)} \\
+        \textbf{Second Place}{: Hathaway Brown Byte (70+ participants)} \\
+        \textbf{Third Place}{: 2022 \& 2023 Ohio High School Fencing Championship} \\
+        \textbf{OSU Maximus Scholarship}{: Competitive merit-based scholarship} \\
+        \textbf{Governor's Merit Scholarship}{: Given to the top 5\% of Ohio students} \\
     }}
- \end{itemize}
+\end{itemize}
 
-  
 %-----------PROGRAMMING SKILLS-----------
 \section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Languages}{: Python, PHP, Java, HTML, CSS, Bash, JavaScript, C, SQL} \\
-     \textbf{Web Development}{: Flask, Django, Bootstrap, jQuery} \\
-     \textbf{Frameworks \& Libraries}{: MySQL, SQLite, Asyncio, SQLAlchemy, Pygame, Pandas, Streamlit} \\
-     \textbf{Developer Tools}{: Linux, Git, Latex, uv, systemctl, Markdown, Excel, VS Code} \\
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{
+    \item{
+        \textbf{Languages}{: Python, TypeScript, JavaScript, PHP, Java, HTML, CSS, Bash, C, SQL} \\
+        \textbf{Web Development}{: Flask, Django, React, React Native, Redux, Jest, Storybook, Bootstrap, jQuery} \\
+        \textbf{Frameworks \& Libraries}{: MySQL, SQLite, Asyncio, SQLAlchemy, Pandas, Streamlit} \\
+        \textbf{Developer Tools}{: Linux, Git, Latex, uv, systemctl, Claude Code, Vim, Markdown, Excel, VS Code} \\
     }}
- \end{itemize}
-
+\end{itemize}
 
 %-------------------------------------------
 \end{document}
